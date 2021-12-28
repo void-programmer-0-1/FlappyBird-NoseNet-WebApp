@@ -1,17 +1,10 @@
 from django.shortcuts import render
-from django.contrib.auth.models import User
-from django.http import HttpResponseRedirect,HttpResponse
+from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.decorators import login_required
 from .form import UserRegisterForm
 
-
-import numpy as np
-import re
-import base64
-from io import BytesIO
-from PIL import Image
 
 
 def loginUser(request):
