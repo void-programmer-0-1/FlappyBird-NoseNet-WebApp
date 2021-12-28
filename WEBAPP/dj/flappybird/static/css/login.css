@@ -4,14 +4,15 @@ html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background: linear-gradient(to bottom left, #ffff00 0%, #ff9900 77%) !important;
+    background: linear-gradient(to top left, #3399ff 0%, #00ccff 100%) !important;
 }
 
 .user_card {
     width: 350px;
     margin-top: auto;
     margin-bottom: auto;
-    background: linear-gradient(to bottom left,#ffcc00  0%, #ff9900 70%) !important;
+    background: linear-gradient(to top left, #3399ff 0%, #00ccff 100%) !important;
+
     position: relative;
     display: flex;
     justify-content: center;
@@ -34,7 +35,7 @@ html {
 
 .login_btn {
     width: 100%;
-    background: grey !important;
+    background: #0099ff !important;
     color: white !important;
 }
 
@@ -48,7 +49,7 @@ html {
 }
 
 .input-group-text {
-    background: #ff9900 !important;
+    background: #00ccff !important;
     color: ff9900 !important;
     border: 0 !important;
     border-radius: 0.25rem 0 0 0.25rem !important;
