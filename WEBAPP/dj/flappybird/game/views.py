@@ -6,7 +6,6 @@ from django.contrib.auth.decorators import login_required
 from .form import UserRegisterForm
 
 
-
 def loginUser(request):
 
     if request.user.is_authenticated:
@@ -49,25 +48,30 @@ def registerUser(request):
 
         return render(request,"register.html",{"form":form})
 
+
 @login_required(login_url="/game/")
 def logoutUser(request):
     logout(request)
     return HttpResponseRedirect("/game/")
+
 
 @login_required(login_url="/game/")
 def home(request):
     
     return render(request,"home.html",None)
 
+
 @login_required(login_url="/game/")
 def about(request):
 
     return render(request,"about.html",None)
 
+
 @login_required(login_url="/game/")
 def hand_game(request):
 
     return render(request,"hand_game.html",None)
+
 
 @login_required(login_url="/game/")
 def nose_game(request):

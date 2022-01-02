@@ -1,0 +1,18 @@
+  
+
+kaggle -> https://www.kaggle.com/ashwingupta3012/human-faces
+
+
+code -> https://github.com/ArminBaz/UTK-Face/blob/master/colab/TrainTridentMain.ipynb
+
+link -> https://analyticsindiamag.com/10-face-datasets-to-start-facial-recognition-projects/
+
+
+app -> https://www.geeksforgeeks.org/how-to-detect-whether-the-website-is-being-opened-in-a-mobile-device-or-a-desktop-in-javascript/
+
+
+
+compelete Dataset --> https://www.kaggle.com/arnaud58/flickrfaceshq-dataset-ffhq?select=00176.png (Very nice 20gb)
+
+
+MASK DATASET --> https://www.kaggle.com/prithwirajmitra/covid-face-mask-detection-dataset
