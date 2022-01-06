@@ -1,8 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Open+Sans+Condensed:wght@300&family=Staatliches&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Open+Sans+Condensed:wght@300&family=Righteous&family=Staatliches&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bebas+Neue&family=Open+Sans+Condensed:wght@300&family=Righteous&family=Roboto+Mono:ital,wght@0,300;1,300&family=Shadows+Into+Light&family=Staatliches&display=swap');
 
 *{
     margin: 0%;
@@ -30,9 +27,9 @@ body{
 }
 
 #game-title{
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-family: 'Staatliches', cursive;
-    font-size: 70px;
+    font-family: 'Amatic SC', cursive;
+    
+    font-size: 100px;
     color: black;
     font-weight: bold;
 }
@@ -61,8 +58,6 @@ body{
     0% {opacity:0;}
     100% {opacity:1;}
 }
-
-
 
 #animated_div {
     position: relative;
@@ -103,6 +98,18 @@ body{
         transform: rotate(-360deg);
         left: 0px;
     }
-
 }
 
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    border-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(37, 34, 34); 
+    border-radius: 10px;
+}
+  
