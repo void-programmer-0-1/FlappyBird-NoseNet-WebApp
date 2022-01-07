@@ -14,6 +14,10 @@ document.getElementById("stop-btn").addEventListener("click",() => {
   start_game = 0;
 });
 
+document.getElementById("restart-btn").addEventListener("click",() => {
+  location.reload();
+});
+
 function setup() {
 
   Canvas = createCanvas(600, 400);

@@ -1,3 +1,4 @@
+from django.db import reset_queries
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.contrib import messages
@@ -69,6 +70,10 @@ def about(request):
 
 @login_required(login_url="/game/")
 def hand_game(request):
+
+    if request.method == "POST":
+        print(request.POST)
+        return "None"
 
     return render(request,"hand_game.html",None)
 

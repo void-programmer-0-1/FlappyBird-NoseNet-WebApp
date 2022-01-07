@@ -16,6 +16,7 @@
     
     <script src="{% static 'js/findDevice.js' %}" defer></script>
     <script src="{% static 'js/jquery.js' %}"  defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
     <script src="{% static 'js/bootstrap.min.js' %}"  defer></script>
 
     <script src="{% static 'js/p5.min.js' %}" defer></script>
@@ -61,7 +62,8 @@
 
         <div class="d-flex justify-content-center ">
             <button id="start-btn" class="mt-3 me-3 btn btn-warning">Start</button>
-            <button id="stop-btn" class="mt-3 btn btn-warning">Pause</button>
+            <button id="stop-btn" class="mt-3 me-3 btn btn-warning">Pause</button>
+            <button id="restart-btn" class="mt-3 btn btn-warning">Restart</button>
         </div>
         
     </div>
@@ -71,6 +73,7 @@
         let PIPE_UP = "{% static 'images/flappybird-pipe-up.png' %}";
         let BACKGROUND = "{% static 'images/fbbackground.png' %}";
         let FLAPPY_BIRD = "{% static 'images/flappy-bird.png' %}"
+        let USERNAME = "{{ request.user }}"
     </script>
 
 </body>

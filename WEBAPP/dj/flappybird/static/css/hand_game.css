@@ -8,8 +8,32 @@ body{
     background-color: rgb(16, 140, 201) !important;
 }
 
+@media screen and (max-width: 992px) {
+    .p5Canvas{
+        width: 500px !important;
+        height: 600px !important;
+    }
+ }
+
+@media screen and (max-width: 700px) {
+    .p5Canvas{
+        width: 400px !important;
+        height: 500px !important;
+    }
+  }
 
 
+@media screen and (max-width: 450px) {
+    .p5Canvas{
+        width: 350px !important;
+        height: 450px !important;
+    }
+}
 
 
-
+@media screen and (max-width: 360px) {
+    .p5Canvas{
+        width: 300px !important;
+        height: 400px !important;
+    }
+}
