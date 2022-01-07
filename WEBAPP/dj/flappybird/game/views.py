@@ -5,7 +5,9 @@ from django.contrib import messages
 from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.decorators import login_required
 from .form import UserRegisterForm
-
+from django.http import HttpResponse
+from .models import ScoreBoard
+from django.contrib.auth.models import User
 
 def loginUser(request):
 
@@ -71,9 +73,20 @@ def about(request):
 @login_required(login_url="/game/")
 def hand_game(request):
 
+    
+
     if request.method == "POST":
-        print(request.POST)
-        return "None"
+        game_score = int(request.POST.get("score"))
+        user = User.objects.get(username=request.user.username)
+        old_score = ScoreBoard.objects.get(user=user)
+
+        if game_score > old_score.score:
+            old_score.score = game_score
+            old_score.save()
+
+            return HttpResponse("Yeh You Now Achieved a New High Score {}".format(game_score), status=200)
+        
+        return HttpResponse("Try Harder Bitch !!!" ,status=200)
 
     return render(request,"hand_game.html",None)
 

@@ -14,8 +14,7 @@ function Pipe() {
   this.speed = 2;
 
   this.show = function(){           
-    console.log(Math.abs(this.top - (height - this.bottom)));
-
+  
     if(((height - this.bottom) - this.top) <= 90){
       this.bottom -= 45;
       this.top -= 45;

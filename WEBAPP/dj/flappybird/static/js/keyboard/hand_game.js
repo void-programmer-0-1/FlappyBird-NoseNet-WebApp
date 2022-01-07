@@ -78,9 +78,9 @@ function draw() {
               csrfmiddlewaretoken:csrftoken
           }
       }).done((res) => {
-        console.log(res);  
+        document.getElementById("msg").innerHTML = res;
       })
-      }
+     }
       
       if(pipes[i].offscreen()){
         if(bird.isdead != true){
