@@ -72,9 +72,7 @@ def about(request):
 
 @login_required(login_url="/game/")
 def hand_game(request):
-
     
-
     if request.method == "POST":
         game_score = int(request.POST.get("score"))
         user = User.objects.get(username=request.user.username)
